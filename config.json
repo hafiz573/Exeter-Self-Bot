@@ -1,0 +1,11 @@
+{
+    "token":"token",
+    "password": "very important", 
+    "prefix": ">", 
+    
+    "nitro_sniper": true, 
+    "giveaway_sniper": true,
+
+    "stream_url": "https://twitch.tv/hzr_h3ry",
+    "tts_language": "en"
+}
